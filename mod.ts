@@ -12,8 +12,9 @@ Deno.serve(async (request: Request) => {
       'max-age=63072000; includeSubDomains; preload'
     );
   }
-  response.headers.set('content-security-policy', `default-src: 'none'`);
+  response.headers.set('content-security-policy', `default-src 'none'; style-src 'self'; img-src 'self' data:; font-src 'self';`);
   response.headers.set('x-content-type-options', 'nosniff');
   response.headers.set('referrer-policy', 'same-origin');
+  response.headers.set('x-frame-options', 'DENY');
   return response;
 });
