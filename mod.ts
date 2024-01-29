@@ -21,11 +21,14 @@ const defaultCSP = [
   "font-src 'self'"
 ];
 
+const feeds = ['/atom.xml', '/feed.xml'];
+const feedsRegex = /^\/(atom|feed|rss)\/?$/;
+
 Deno.serve(async (request: Request) => {
   const url = new URL(request.url);
 
   // Redirect common feed URLs
-  if (/^\/(rss|feed)\/?$/.test(url.pathname)) {
+  if (feeds.includes(url.pathname) || feedsRegex.test(url.pathname)) {
     return Response.redirect(new URL('/rss.xml', url), 308);
   }
 
