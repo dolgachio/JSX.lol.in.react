@@ -17,37 +17,43 @@ const defaultCSP = [
   "form-action 'none'",
   "default-src 'none'",
   "img-src 'self' data:",
-  "font-src 'self'",
-  "script-src 'self'"
+  "font-src 'self'"
 ];
 
 Deno.serve(async (request: Request) => {
   const url = new URL(request.url);
+
   // Redirect common feed URLs
   if (/^\/(rss|feed)\/?$/.test(url.pathname)) {
     return Response.redirect(new URL('/rss.xml', url), 308);
   }
+
   // Serve static files
   let response = await serveDir(request, {
     fsRoot: new URL('./public', import.meta.url).pathname,
     quiet: true
   });
+
+  // Set CSP header
   let csp = defaultCSP.join('; ') + '; ';
+
   // Handle RSS feed
   if (url.pathname === '/rss.xml') {
+    csp += `script-src 'self'; style-src 'self'; `;
     response = await handleRSS();
-    csp += `style-src 'self'; `;
   }
-  if (response.headers.get('content-type')?.startsWith('text/html')) {
-    let body = await response.text();
-    if (cssRegex.test(body)) {
+
+  // Inline stylesheet
+  if (url.pathname === '/') {
+    csp += `style-src 'sha256-${cssHash}'; `;
+    if (response.ok && response.body) {
+      let body = await response.text();
       body = body.replace(cssRegex, `<style>${cssMin}</style>`);
-      csp += `style-src 'sha256-${cssHash}'; `;
-    } else {
-      csp += `style-src 'self'; `;
+      response = new Response(body, response);
     }
-    response = new Response(body, response);
   }
+
+  // Add headers
   response.headers.set('content-security-policy', csp);
   response.headers.set('x-content-type-options', 'nosniff');
   response.headers.set('referrer-policy', 'same-origin');
@@ -58,5 +64,6 @@ Deno.serve(async (request: Request) => {
       'max-age=63072000; includeSubDomains; preload'
     );
   }
+
   return response;
 });
