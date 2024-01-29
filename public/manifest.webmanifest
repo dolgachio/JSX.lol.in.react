@@ -1,0 +1,20 @@
+{
+  "name": "JSX.lol",
+  "short_name": "JSX.lol",
+  "icons": [
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#41a3fe",
+  "background_color": "#14161d",
+  "display": "standalone",
+  "start_url": "/"
+}
