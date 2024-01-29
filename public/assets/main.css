@@ -84,6 +84,8 @@ body {
   & > footer {
     & p {
       margin-block-end: var(--space-s);
+      text-align: end;
+      text-wrap: pretty;
     }
   }
 }
@@ -178,7 +180,7 @@ hr {
   border-block-start: calc((2 / 16) * 1rem) solid
     oklch(var(--color-subtle) / 0.5);
   display: block;
-  margin-block: var(--space-m);
+  margin-block: var(--space-m-l);
 
   &:first-child {
     margin-block-start: 0;
