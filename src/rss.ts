@@ -1,13 +1,5 @@
 import {calculate} from 'https://deno.land/std@0.212.0/http/etag.ts';
 
-export interface Entry {
-  title: string;
-  description: string;
-  link: string;
-  guid: string;
-  pubDate: string;
-}
-
 const hash = (value: string): Promise<ArrayBuffer> =>
   crypto.subtle.digest('SHA-1', new TextEncoder().encode(value));
 
