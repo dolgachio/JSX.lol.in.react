@@ -74,9 +74,9 @@ body {
   padding-block: var(--space-m-l);
 
   & > * {
+    inline-size: clamp(18rem, 100%, 80ch + 2vi + var(--space-s-l));
     margin-block: 0;
     margin-inline: auto;
-    max-inline-size: calc(80ch + 2vi + var(--space-s-l));
     padding-block: var(--space-m-l);
     padding-inline: calc(2vi + var(--space-s-l));
   }

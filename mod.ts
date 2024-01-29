@@ -16,6 +16,7 @@ const defaultCSP = [
   "frame-ancestors 'none'",
   "form-action 'none'",
   "default-src 'none'",
+  "manifest-src 'self'",
   "img-src 'self' data:",
   "font-src 'self'"
 ];
