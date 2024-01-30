@@ -83,14 +83,15 @@ export const handleRSS = async () => {
     const entries: string[] = [];
     const articles = html.match(/<article[^>]*?>(.*?)<\/article>/gs)!;
     for (const article of articles) {
-      const heading = article.match(/<h3[^>]*?>(.*?)<\/h3>/s);
+      const heading = article.match(/<h3[^>]*?>(.*?)<\/h3>/s)![1];
       const blockquote = article.match(
         /<blockquote[^>]*?>(.*?)<\/blockquote>/s
-      );
-      const time = article.match(/<time[^>]*?>(.*?)<\/time>/s)![1];
-      const link = /href="([^"]*?)"/.exec(heading![1])![1];
-      const title = /<span[^>]*?>(.*?)<\/span>/.exec(heading![1])![1];
-      const description = /<p[^>]*?>(.*?)<\/p>/.exec(blockquote![1])![1];
+      )![1];
+      const link = /href="([^"]*?)"/.exec(heading)![1];
+      const title = /<span[^>]*?>(.*?)<\/span>/.exec(heading)![1];
+      const description = /<p[^>]*?>(.*?)<\/p>/.exec(blockquote)![1];
+      const time = blockquote.match(/<time[^>]*?>(.*?)<\/time>/s)![1];
+      const cite = blockquote.match(/<cite[^>]*?>(.*?)<\/cite>/s)![1];
       let xml = entry;
       xml = replace(xml, `{{title}}`, title);
       xml = replace(xml, `{{description}}`, description);
