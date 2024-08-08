@@ -1,0 +1,23 @@
+/*
+  access-control-allow-origin: https://jsx.lol
+  x-frame-options: DENY
+  x-xss-protection: 1; mode=block
+  x-content-type-options: nosniff
+  strict-transport-security: max-age=63072000; includeSubDomains; preload
+  content-security-policy: base-uri 'none'; frame-ancestors 'none'; form-action 'none'; default-src 'none'; manifest-src 'self'; img-src 'self' data:; style-src 'self'; font-src 'self';
+  permissions-policy: browsing-topics=(),interest-cohort=()
+  referrer-policy: same-origin
+  x-robots-tag: noai, noimageai
+
+/assets/*
+  x-robots-tag: noindex
+
+/robots.txt
+  ! x-robots-tag
+
+/*.xml
+  ! access-control-allow-origin
+  access-control-allow-origin: *
+
+/rss.xml
+  content-type: application/xml; charset=utf-8

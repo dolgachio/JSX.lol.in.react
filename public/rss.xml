@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="/assets/rss.xsl" type="text/xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JSX.lol</title>
+    <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
+    <link>https://jsx.lol</link>
+    <lastBuildDate>Thu, 18 Jul 2024 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en</language>
+<item>
+  <title>After a Decade of React, Is Frontend a Post-React World Now?</title>
+  <description>If you’re a new web developer entering the profession, you might even consider eschewing React altogether — although admittedly, that will diminish your short-term job prospects. But it’s at least an option to seriously consider, and might even help you land a job with a forward-thinking employer.</description>
+  <link>https://thenewstack.io/after-a-decade-of-react-is-frontend-a-post-react-world-now/</link>
+  <guid isPermaLink="false">4f144w436t1f3h3e2qvxu283q1q4b3y6p20</guid>
+  <pubDate>Thu, 18 Jul 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Pivoting From React to Native DOM APIs: A Real World Example</title>
+  <description>One dev team made the shift from React’s "overwhelming VDOM" to modern DOM APIs. They immediately saw speed and interaction improvements.</description>
+  <link>https://thenewstack.io/pivoting-from-react-to-native-dom-apis-a-real-world-example/</link>
+  <guid isPermaLink="false">3j205g1n1a295p522l6y3165y2a91s4268701l</guid>
+  <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>How React 19 (Almost) Made the Internet Slower</title>
+  <description>After a lot of public pushback, heated discussions, and probably a good deal of talking behind the scenes, the React team backed out and decided to hold off on this change for now.</description>
+  <link>https://blog.codeminer42.com/how-react-19-almost-made-the-internet-slower/</link>
+  <guid isPermaLink="false">48h4j70586a4u4dy2p3ju2gh6g4j2s6l23c</guid>
+  <pubDate>Mon, 17 Jun 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>An even faster Microsoft Edge</title>
+  <description>moving away from React to a modern Web Components + HTML-first architecture has had a *huge* benefit for users, particularly folks on low-end hardware</description>
+  <link>https://toot.cafe/@slightlyoff/112521248529973776</link>
+  <guid isPermaLink="false">6n2539h5r5m572ym3f2u5t4g1k2u3d4q5q22i</guid>
+  <pubDate>Wed, 29 May 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>React, Electron, and LLMs have a common purpose: the labour arbitrage theory of dev tool popularity</title>
+  <description>React is, for the vast, vast majority of organisations making web-facing software, objectively worse than many of the alternatives.</description>
+  <link>https://www.baldurbjarnason.com/2024/react-electron-llms-labour-arbitrage/</link>
+  <guid isPermaLink="false">6b23x4m4h4o3i4v6c2s6h2t3b3y522rj5f4x3o</guid>
+  <pubDate>Thu, 02 May 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>We Rewrote our React App in Svelte in Three Weeks</title>
+  <description>I’ve seen all those headlines about Svelte being the “most loved” framework, and… well I admit, I just ignored it as noise. But the next time that survey comes around, I’ll be right up there with them, waving from the Svelte bandwagon.</description>
+  <link>https://dusty.phillips.codes/2024/03/20/we-rewrote-our-react-app-in-svelte-in-three-weeks/</link>
+  <guid isPermaLink="false">2g131i6a1a24j5dy4k525516d682w6p1v582c</guid>
+  <pubDate>Wed, 20 Mar 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>It feels like React is getting a bit of a kicking recently</title>
+  <description>I talk about an apparent attitude shift in attitude towards React in the community and also make some recommendations about decision-making for your projects.</description>
+  <link>https://piccalil.li/blog/react-is-getting-a-bit-of-a-kicking-recently/</link>
+  <guid isPermaLink="false">3g6o3x3b6u4e3z3q5o3h6372k3f402c186dn2m</guid>
+  <pubDate>Wed, 31 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Switching costs</title>
+  <description>Personally, I would love it if more people were complaining about the dreadful user experience inflicted by client-side React. Instead the complaints are universally about the developer experience.</description>
+  <link>https://adactio.com/journal/20837</link>
+  <guid isPermaLink="false">5m1j4s3t5u6r1c1e2y5b3e06jk5n3575h411a</guid>
+  <pubDate>Wed, 31 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Removing React is just weakness leaving your codebase</title>
+  <description>By ejecting from the thrash of React and other heavy-handed frameworks and doubling down on web fundamentals, you’ll be future-proofing both your career and your codebases.</description>
+  <link>https://begin.com/blog/posts/2024-01-26-removing-react-is-just-weakness-leaving-your-codebase</link>
+  <guid isPermaLink="false">3s3n73474w136h5n134c606n553765575u4j3j5l</guid>
+  <pubDate>Fri, 26 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Concatenating text</title>
+  <description>Why the heck is everyone reaching for React as soon as something on the screen needs to update? And why do we insist on squishing our frontend concerns together with our backend concerns?</description>
+  <link>https://johan.hal.se/wrote/2024/01/24/concatenating-text/</link>
+  <guid isPermaLink="false">5rv124z4ti5q2m1z184h5u4v2d1q454s61h3k</guid>
+  <pubDate>Wed, 24 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>React, where are you going?</title>
+  <description>However, today I see two problems that make me enjoy React a little less and make me worry that new developers might be intimidated by it: ownership and complexity.</description>
+  <link>https://dev.to/matfrana/react-where-are-you-going-5284</link>
+  <guid isPermaLink="false">5h4t3w5sw101f253s1rt6a3w596g4j4i473n13</guid>
+  <pubDate>Tue, 16 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Moving on from React</title>
+  <description>After a false start with React in 2023, we’re now on a tech stack that we’re not fighting against and that maps better to our customers’ domain.</description>
+  <link>https://kellysutton.com/2024/01/15/moving-on-from-react.html</link>
+  <guid isPermaLink="false">2f1fv1i1y273819116t172u123dsf293z369</guid>
+  <pubDate>Mon, 15 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Kind of annoyed at React</title>
+  <description>[...] I still reach for React when I want to build something somewhat complex, I just… wish I were happier about it when I do.</description>
+  <link>https://blog.cassidoo.co/post/annoyed-at-react/</link>
+  <guid isPermaLink="false">461ae1s5h64k522o5l46143e1n2670645q6s72</guid>
+  <pubDate>Sat, 13 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Increasingly miffed about the state of React releases</title>
+  <description>It has been one and a half years since the last React release, far longer than any previous release took.</description>
+  <link>https://macwright.com/2024/01/03/miffed-about-react</link>
+  <guid isPermaLink="false">5j4z6o555h1b3w713h452v1k5p454o65k4v4e4e</guid>
+  <pubDate>Wed, 03 Jan 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>React Server Components: the Good, the Bad, and the Ugly</title>
+  <description>At the same time, React has done nothing (besides an abandoned experiment in 2019) to improve their pitiful client-side story. It is a legacy framework created to solve Facebook-scale problems with Facebook-scale resources, and as such is a bad fit for most use cases.</description>
+  <link>https://www.mayank.co/blog/react-server-components/</link>
+  <guid isPermaLink="false">4v3p4l17b4e1p3f4u5ei1z5a3z5m1a3359406p</guid>
+  <pubDate>Fri, 29 Dec 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Replacing React: How Liveview solved our performance problems</title>
+  <description>Performance challenges with a React SPA created an opportunity to explore Liveview. After two days of exploration, we were convinced Liveview provided a path forward, and within a few weeks, we replaced our React SPA with Liveview.</description>
+  <link>https://www.youtube.com/watch?v=Qz0ZnOMaePo</link>
+  <guid isPermaLink="false">6722g1315b2x4o2b5s3aj503he3g4g173d4o</guid>
+  <pubDate>Wed, 29 Nov 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Please don't use React</title>
+  <description>You should stop using React. In fact, you probably should have never used React in any of the projects you used it on. But before you pull out your sawed-off shotgun and shoot me, hear me out.</description>
+  <link>https://dev.to/borfast/please-dont-use-react-16m4</link>
+  <guid isPermaLink="false">4n1dy424a1f736b6t82r6j1zx3am6k5z5w3n</guid>
+  <pubDate>Mon, 06 Nov 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Why Signals Are Better Than React Hooks</title>
+  <description>Hooks in React are tricky to use correctly and even harder to use in a performant way. This has left many applications with poor code quality and bad performance, but that doesn’t have to be the case anymore.</description>
+  <link>https://www.youtube.com/watch?v=SO8lBVWF2Y8</link>
+  <guid isPermaLink="false">4c685z5l5u6h584f5u1a233x62p2z91bgh27</guid>
+  <pubDate>Tue, 31 Oct 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>React Server Components are a bad choice (for shipping)</title>
+  <description>Making the case that you should not use React Server Components if you want to ship applications quickly. If you want to learn, experiment, or make content, by all means!</description>
+  <link>https://www.youtube.com/watch?v=dH6_cJwgHnM</link>
+  <guid isPermaLink="false">5f663m4r4f1c2y6e1s2cs56305h5t6k111w2y4u</guid>
+  <pubDate>Fri, 09 Jun 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Am I the only one that thinks that the direction of React is wrong?</title>
+  <description>Feels like React is playing his own game by his own rules.</description>
+  <link>https://old.reddit.com/r/reactjs/comments/13n9zny/am_i_the_only_one_that_thinks_that_the_direction/</link>
+  <guid isPermaLink="false">2j34q2f345n4p1u6l5t3i6l4d2s4i6p343g1j</guid>
+  <pubDate>Sat, 20 May 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Client-side JavaScript and React criticism: What comes next? </title>
+  <description>How do we improve JavaScript usage, teach progressive enhancement and reconcile the community?</description>
+  <link>https://molily.de/javascript-criticism/</link>
+  <guid isPermaLink="false">3e5f582c143e4ol4k513m6d2o4v6q3a2x3y3v69</guid>
+  <pubDate>Fri, 03 Mar 2023 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>A Historical Reference of React Criticism</title>
+  <description>There have been a number of criticisms levied at the React project over the years, some of them handled and some of them still wavering in the wind.</description>
+  <link>https://www.zachleat.com/web/react-criticism/</link>
+  <guid isPermaLink="false">h283i51w24315s6b6l1j4g363q182r2v1l414n</guid>
+  <pubDate>Mon, 06 Feb 2023 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
