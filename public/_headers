@@ -16,6 +16,7 @@
   ! x-robots-tag
 
 /*.xml
+  ! content-security-policy
   ! access-control-allow-origin
   access-control-allow-origin: *
 
