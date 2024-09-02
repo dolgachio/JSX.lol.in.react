@@ -5,9 +5,16 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Thu, 18 Jul 2024 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Sep 2024 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>What Is React.js?</title>
+  <description>Its proponents can be weird, it takes itself far too seriously, and its documentation is interminable. These are some ways that some people have described Christianity. This video is about React.js.</description>
+  <link>https://briefs.video/videos/what-is-react/</link>
+  <guid isPermaLink="false">3r4n1b6e1n4q34573o536da1n246t3q5w1v363l</guid>
+  <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>After a Decade of React, Is Frontend a Post-React World Now?</title>
   <description>If you’re a new web developer entering the profession, you might even consider eschewing React altogether — although admittedly, that will diminish your short-term job prospects. But it’s at least an option to seriously consider, and might even help you land a job with a forward-thinking employer.</description>
