@@ -5,15 +5,29 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Mon, 02 Sep 2024 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>Something went wrong</title>
+  <description>A small cabal of JavaScript framework vendors, ‘merchants of complexity’, ‘fraudsters’, ‘grifters’, have conspired to sell us inferior architectures. Meta with React.js and Vercel with Next.js are named as the culprits.</description>
+  <link>https://molily.de/something-went-wrong/</link>
+  <guid isPermaLink="false">54p4g2qe2i16db5y5gm32f2n1f1s5b1d3u</guid>
+  <pubDate>Wed, 11 Sep 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>What Is React.js?</title>
   <description>Its proponents can be weird, it takes itself far too seriously, and its documentation is interminable. These are some ways that some people have described Christianity. This video is about React.js.</description>
   <link>https://briefs.video/videos/what-is-react/</link>
   <guid isPermaLink="false">3r4n1b6e1n4q34573o536da1n246t3q5w1v363l</guid>
   <pubDate>Mon, 02 Sep 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Reckoning: Part 4 — The Way Out</title>
+  <description>Refuse to go along with plans to build YAJSD (Yet Another JavaScript Disaster). Engineering leaders look to their senior engineers for trusted guidance about what technologies to adopt. When someone inevitably proposes the React rewrite, do not be silent.</description>
+  <link>https://infrequently.org/2024/08/the-way-out/</link>
+  <guid isPermaLink="false">1jq4k5b73v41j3up72240j591y44413s1a</guid>
+  <pubDate>Fri, 16 Aug 2024 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>After a Decade of React, Is Frontend a Post-React World Now?</title>
