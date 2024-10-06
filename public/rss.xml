@@ -5,9 +5,16 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Wed, 11 Sep 2024 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 05 Oct 2024 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>How to build a counter component using the HTML Framework in just 1 line of code</title>
+  <description>Locate your /node_modules folder and drag it to the trash bin.</description>
+  <link>https://scottjehl.com/posts/how-to-build-a-counter-component-using-the-html-framework-in-just-1-line-of-code/</link>
+  <guid isPermaLink="false">1j116c164k194n1j556p293q492m5x305i82632</guid>
+  <pubDate>Sat, 05 Oct 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Something went wrong</title>
   <description>A small cabal of JavaScript framework vendors, ‘merchants of complexity’, ‘fraudsters’, ‘grifters’, have conspired to sell us inferior architectures. Meta with React.js and Vercel with Next.js are named as the culprits.</description>
