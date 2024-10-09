@@ -5,9 +5,16 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Sat, 05 Oct 2024 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 08 Oct 2024 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>Liskov’s Gun: The parallel evolution of React and Web Components</title>
+  <description>React has become a bloated carcass of false promises, misleading claims, and unending layers of backwards compatibility – the wrong kind of backwards compatibility, as they still occasionally break your fucking code when updating.</description>
+  <link>https://www.baldurbjarnason.com/2024/liskovs-gun/</link>
+  <guid isPermaLink="false">1s5y655s3p1634q515211n40654x6w4x6t6357</guid>
+  <pubDate>Tue, 08 Oct 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>How to build a counter component using the HTML Framework in just 1 line of code</title>
   <description>Locate your /node_modules folder and drag it to the trash bin.</description>
