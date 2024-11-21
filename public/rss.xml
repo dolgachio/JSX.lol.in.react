@@ -10,7 +10,7 @@
     <language>en</language>
 <item>
   <title>I don't have time to learn React</title>
-  <description>React proponents might claim that React will teach you modern UI, but from what I've seen it barely copes with modern UI. autofocus is broken, custom elements don't work in all but the experimental version, using any "modern" features like &lt;dialog&gt; or popovers requires useEffect, and the synthetic event system teaches you so little about how DOM actually works. This isn't modern UI, it's UI from 2013 at its inception.</description>
+  <description>React proponents might claim that React will teach you modern UI, but from what I've seen it barely copes with modern UI. autofocus is broken, custom elements don't work in all but the experimental version, using any "modern" features like dialog or popovers requires useEffect, and the synthetic event system teaches you so little about how DOM actually works. This isn't modern UI, it's UI from 2013 at its inception.</description>
   <link>https://www.keithcirkel.co.uk/i-dont-have-time-to-learn-react/</link>
   <guid isPermaLink="false">2z3o1b5w6l6y2o2p3g5pr212x3t1w2p5v77</guid>
   <pubDate>Thu, 21 Nov 2024 00:00:00 GMT</pubDate>
