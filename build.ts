@@ -1,46 +1,34 @@
-import {encodeBase64} from 'jsr:@std/encoding';
-import * as lcss from 'npm:lightningcss';
-import {stripTags} from 'jsr:@dbushell/hyperless';
+import { encodeBase64 } from "jsr:@std/encoding";
+import * as lcss from "npm:lightningcss";
+import { stripTags } from "jsr:@dbushell/hyperless";
 
 const hash = (value: string): Promise<ArrayBuffer> =>
-  crypto.subtle.digest('SHA-1', new TextEncoder().encode(value));
+  crypto.subtle.digest("SHA-1", new TextEncoder().encode(value));
 
 const guid = async (value: string) =>
-  new Uint8Array(await hash(value)).reduce((a, b) => a + b.toString(36), '');
-
-const replace = (
-  subject: string,
-  search: string,
-  replace = '',
-  all = false
-) => {
-  let parts = subject.split(search);
-  if (parts.length === 1) return subject;
-  if (!all) parts = [parts.shift()!, parts.join(search)];
-  return parts.join(replace);
-};
+  new Uint8Array(await hash(value)).reduce((a, b) => a + b.toString(36), "");
 
 const months = [
-  'January',
-  'February',
-  'March',
-  'April',
-  'May',
-  'June',
-  'July',
-  'August',
-  'September',
-  'October',
-  'November',
-  'December'
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 // Parse date string, e.g. "1st May 2024"
 const parseDate = (time: string) => {
   const parts = time.match(/(\d{1,2})[a-z]{2} (\w+) (\d{4})/i);
   const year = Number.parseInt(parts![3]);
-  const month = (months.indexOf(parts![2]) + 1).toString().padStart(2, '0');
-  const day = Number.parseInt(parts![1]).toString().padStart(2, '0');
+  const month = (months.indexOf(parts![2]) + 1).toString().padStart(2, "0");
+  const day = Number.parseInt(parts![1]).toString().padStart(2, "0");
   const date = new Date(`${year}-${month}-${day}`);
   return date;
 };
@@ -70,61 +58,61 @@ const entry = `<item>
 
 // Generate RSS feed from HTML
 const html = await Deno.readTextFile(
-  new URL(import.meta.resolve('./public/index.html')).pathname
+  new URL(import.meta.resolve("./public/index.html")).pathname,
 );
 let rss = template;
-let lastBuildDate = '';
+let lastBuildDate = "";
 const entries: string[] = [];
 const articles = html.match(/<article[^>]*?>(.*?)<\/article>/gs)!;
 for (const article of articles) {
   const heading = article.match(/<h3[^>]*?>(.*?)<\/h3>/s)![1];
   const blockquote = article.match(
-    /<blockquote[^>]*?>(.*?)<\/blockquote>/s
+    /<blockquote[^>]*?>(.*?)<\/blockquote>/s,
   )![1];
   const link = /href="([^"]*?)"/.exec(heading)![1];
   const title = /<span[^>]*?>(.*?)<\/span>/.exec(heading)![1];
   const description = stripTags(/<p[^>]*?>(.*?)<\/p>/.exec(blockquote)![1]);
   const time = blockquote.match(/<time[^>]*?>(.*?)<\/time>/s)![1];
-  // const cite = blockquote.match(/<cite[^>]*?>(.*?)<\/cite>/s)![1];
+  const id = await guid(link);
   let xml = entry;
-  xml = replace(xml, `{{title}}`, title);
-  xml = replace(xml, `{{description}}`, description);
-  xml = replace(xml, `{{link}}`, link);
-  xml = replace(xml, `{{guid}}`, await guid(link));
-  xml = replace(xml, `{{pubDate}}`, parseDate(time).toUTCString());
+  xml = xml.replace(`{{title}}`, () => title);
+  xml = xml.replace(`{{description}}`, () => description);
+  xml = xml.replace(`{{link}}`, () => link);
+  xml = xml.replace(`{{guid}}`, () => id);
+  xml = xml.replace(`{{pubDate}}`, () => parseDate(time).toUTCString());
   entries.push(xml);
-  if (!lastBuildDate) {
+  if (lastBuildDate === "") {
     lastBuildDate = parseDate(time).toUTCString();
   }
 }
-rss = replace(rss, `{{lastBuildDate}}`, lastBuildDate);
-rss = replace(rss, `{{entries}}`, entries.join(''));
+rss = rss.replace(`{{lastBuildDate}}`, () => lastBuildDate);
+rss = rss.replace(`{{entries}}`, () => entries.join(""));
 
 await Deno.writeTextFile(
-  new URL(import.meta.resolve('./public/rss.xml')).pathname,
-  rss
+  new URL(import.meta.resolve("./public/rss.xml")).pathname,
+  rss,
 );
 
-const {code} = lcss.bundle({
-  filename: new URL(import.meta.resolve('./public/assets/main.css')).pathname,
+const { code } = lcss.bundle({
+  filename: new URL(import.meta.resolve("./public/assets/main.css")).pathname,
   minify: true,
   sourceMap: false,
-  include: lcss.Features.Nesting
+  include: lcss.Features.Nesting,
 });
 
 let css = new TextDecoder().decode(code);
-css = css.replace(/\/\*[\s\S]*?\*\//g, '').trim();
+css = css.replace(/\/\*[\s\S]*?\*\//g, "").trim();
 
 const cssHash = encodeBase64(
   new Uint8Array(
-    await crypto.subtle.digest('sha-256', new TextEncoder().encode(css))
-  )
+    await crypto.subtle.digest("sha-256", new TextEncoder().encode(css)),
+  ),
 );
 
-const cssPath = new URL(import.meta.resolve('./public/assets/main.min.css'))
+const cssPath = new URL(import.meta.resolve("./public/assets/main.min.css"))
   .pathname;
 
 await Promise.all([
   Deno.writeTextFile(cssPath, css),
-  Deno.writeTextFile(cssPath.replace(/\.css$/, '.txt'), cssHash)
+  Deno.writeTextFile(cssPath.replace(/\.css$/, ".txt"), cssHash),
 ]);
