@@ -1,5 +1,6 @@
 import {encodeBase64} from 'jsr:@std/encoding';
 import * as lcss from 'npm:lightningcss';
+import {stripTags} from 'jsr:@dbushell/hyperless';
 
 const hash = (value: string): Promise<ArrayBuffer> =>
   crypto.subtle.digest('SHA-1', new TextEncoder().encode(value));
@@ -82,7 +83,7 @@ for (const article of articles) {
   )![1];
   const link = /href="([^"]*?)"/.exec(heading)![1];
   const title = /<span[^>]*?>(.*?)<\/span>/.exec(heading)![1];
-  const description = /<p[^>]*?>(.*?)<\/p>/.exec(blockquote)![1];
+  const description = stripTags(/<p[^>]*?>(.*?)<\/p>/.exec(blockquote)![1]);
   const time = blockquote.match(/<time[^>]*?>(.*?)<\/time>/s)![1];
   // const cite = blockquote.match(/<cite[^>]*?>(.*?)<\/cite>/s)![1];
   let xml = entry;
