@@ -5,9 +5,16 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Thu, 21 Nov 2024 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>If Not React, Then What?</title>
+  <description>Frameworkism preaches that the way to improve user experiences is to adopt more (or different) tooling from the framework's ecosystem. This provides adherents with something to <em>do</em> that looks plausibly like engineering, except it isn't. It can even become a totalising commitment; solutions to user problems outside the framework's expanded cinematic universe are unavailable to the frameworkist.</description>
+  <link>https://infrequently.org/2024/11/if-not-react-then-what/</link>
+  <guid isPermaLink="false">573n56255r2l1l185741n1p6al643v40r5y4a</guid>
+  <pubDate>Fri, 29 Nov 2024 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>I don't have time to learn React</title>
   <description>React proponents might claim that React will teach you modern UI, but from what I've seen it barely copes with modern UI. autofocus is broken, custom elements don't work in all but the experimental version, using any "modern" features like dialog or popovers requires useEffect, and the synthetic event system teaches you so little about how DOM actually works. This isn't modern UI, it's UI from 2013 at its inception.</description>
