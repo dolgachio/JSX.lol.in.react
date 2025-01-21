@@ -5,9 +5,16 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Fri, 29 Nov 2024 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>Moving on from React, a Year Later</title>
+  <description>Maybe it’s the changing interest rates or political winds, but I think the “fat client” era JS-heavy frontends is on its way out. The hype around edge applications is misplaced and unnecessary for building many different flavors of successful businesses. Many interactions are not possible without JavaScript, but that doesn’t mean we should look to write more than we have to.</description>
+  <link>https://kellysutton.com/2025/01/18/moving-on-from-react-a-year-later.html</link>
+  <guid isPermaLink="false">302228182v276q3c24522d4l5y73341a6h1gg21</guid>
+  <pubDate>Sat, 18 Jan 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>If Not React, Then What?</title>
   <description>Frameworkism preaches that the way to improve user experiences is to adopt more (or different) tooling from the framework's ecosystem. This provides adherents with something to do that looks plausibly like engineering, except it isn't. It can even become a totalising commitment; solutions to user problems outside the framework's expanded cinematic universe are unavailable to the frameworkist.</description>
