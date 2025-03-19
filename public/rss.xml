@@ -5,9 +5,16 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Sat, 18 Jan 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 04 Mar 2025 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>Stop Using and Recommending React</title>
+  <description>I have used React for a long time. Trust me when I tell you: There is no reason to use it and a lot of reasons against it.</description>
+  <link>https://blog.lusito.info/stop-using-and-recommending-react.html</link>
+  <guid isPermaLink="false">3k3v6s2w6m1v4i562o5q2jj2h6b3a2s545h294y</guid>
+  <pubDate>Tue, 04 Mar 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Moving on from React, a Year Later</title>
   <description>Maybe it’s the changing interest rates or political winds, but I think the “fat client” era JS-heavy frontends is on its way out. The hype around edge applications is misplaced and unnecessary for building many different flavors of successful businesses. Many interactions are not possible without JavaScript, but that doesn’t mean we should look to write more than we have to.</description>
