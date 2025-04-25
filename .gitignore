@@ -8,6 +8,8 @@ public/*
 !public/robots.txt
 !public/rss.xml
 !public/assets
+!public/bunnycdn_errors
+!public/bunnycdn_errors/404.html
 !.gitignore
 !LICENSE
 !mod.ts

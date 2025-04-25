@@ -2,7 +2,7 @@
 
 Does **anybody** actually like React?
 
-A cherry-picked collection of React criticism.
+A cherry-picked collection of React (and React-tainted) criticism.
 
 [Open an issue](https://github.com/dbushell/JSX.lol/issues) for content suggestions, concerns, or corrections.
 

@@ -38,7 +38,7 @@ const template = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JSX.lol</title>
-    <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
+    <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React (and React-tainted) criticism.</description>
     <link>https://jsx.lol</link>
     <lastBuildDate>{{lastBuildDate}}</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>

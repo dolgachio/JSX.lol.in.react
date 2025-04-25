@@ -3,11 +3,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JSX.lol</title>
-    <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React criticism.</description>
+    <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React (and React-tainted) criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Tue, 04 Mar 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>You should know this before choosing Next.js</title>
+  <description>Last weekend, Vercel disclosed a critical security vulnerability with Next.js. This type of issue is normal, but the way Vercel chose to handle it was so poor, reckless and disrespectful to the community that it has exacerbated my concerns about the governance of the project.</description>
+  <link>https://eduardoboucas.com/posts/2025-03-25-you-should-know-this-before-choosing-nextjs/</link>
+  <guid isPermaLink="false">y6q6k61474h4c2i5k654966n4m2x3p656x294c</guid>
+  <pubDate>Tue, 25 Mar 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Stop Using and Recommending React</title>
   <description>I have used React for a long time. Trust me when I tell you: There is no reason to use it and a lot of reasons against it.</description>
