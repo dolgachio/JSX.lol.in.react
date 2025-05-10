@@ -5,9 +5,16 @@
     <title>JSX.lol</title>
     <description>JSX.lol - Does anybody actually like React? A cherry-picked collection of React (and React-tainted) criticism.</description>
     <link>https://jsx.lol</link>
-    <lastBuildDate>Tue, 25 Mar 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 09 May 2025 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://jsx.lol/rss.xml" rel="self" type="application/rss+xml"/>
     <language>en</language>
+<item>
+  <title>HTML is better than React!?</title>
+  <description>[...] baseline HTML that gets progressively enhanced into something better when JS is available… 1. Gives people a more usable experience earlier in the process. 2. Ensures that on slow connections your site doesn’t seem like trash. 3. Means that if something goes wrong, people can still use your site.</description>
+  <link>https://gomakethings.com/html-is-better-than-react/</link>
+  <guid isPermaLink="false">w04w5u616x23040d746u546k4q2zr373r</guid>
+  <pubDate>Fri, 09 May 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>You should know this before choosing Next.js</title>
   <description>Last weekend, Vercel disclosed a critical security vulnerability with Next.js. This type of issue is normal, but the way Vercel chose to handle it was so poor, reckless and disrespectful to the community that it has exacerbated my concerns about the governance of the project.</description>
